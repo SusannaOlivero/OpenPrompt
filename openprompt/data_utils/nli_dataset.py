@@ -51,7 +51,8 @@ class SNLIProcessor(DataProcessor):
     """
     def __init__(self):
         super().__init__()
-        self.labels = ['entailment', 'neutral', 'contradiction']
+        self.labels = ['entailment', 'contradiction']
+        #self.labels = ['entailment', 'neutral', 'contradiction']
 
     def get_examples(self, data_dir, split):
         path = os.path.join(data_dir, f"{split}.tsv")
